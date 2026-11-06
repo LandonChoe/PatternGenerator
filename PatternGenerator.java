@@ -1,14 +1,23 @@
 //  Class author:  Landon Choe
 //  Date created:  10/28
 //  General description: Does certain methods of patterns and outputs stuff based on what the user puts in that aligns to the preconditions and use loops.
-// Precondition: enter the number of lines you want
 public class PatternGenerator {
 public static void main(String [] args){
+    // Precondition: enter the number of lines you want and dont put negative
         stars(4);
+    // Postcondition: It will out put that amount of lines as stars in a descending order with like the first line having 1, second having 3 and the pattern goes on.
+    // Precondition: Add the number of lines you want for the triangle of numbers, dont put negative 
         triangle(5);
+    // Postcondition: It will output the lines you put starting with 1 and going down a pyramid to the number of lines you put.
+    // Precondition: Put in the highest odd number and no even numbers
         odds(7);
+    // Postcondition: then it will have a reverse staircase only going by odd numbers and odd lengths based on the highest odd number you put.
+    // Precondition: Add the highest number of E's you want for your pattern.
         eo(6);
+    // Postcondition: If its even then the starting letter is O and if its odd the starting letter is E and then goes up to the max amount of E's in maxE and does back down.
+    // Precondition: Input how many rows you want for a reverse pyramid pattern, just dont do negative like every other precondition.
         pyramid(5);
+    // Postcondition: It will output a reverse centered pyramid starting with 1 then going down a line to the number of rows you added.
 }
 public static void stars(int rows){
     int i = 1;
@@ -52,6 +61,7 @@ public static void odds(int start){
         i++;
         j = j - 2;
     }
+System.out.println();
 }
 
 public static void eo(int maxE) {
@@ -93,6 +103,7 @@ public static void eo(int maxE) {
         }
         j--;
     }
+    System.out.println();
 }
 public static void pyramid(int rows) {
     int i = 1;
